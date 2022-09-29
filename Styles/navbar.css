@@ -290,24 +290,23 @@ body{
     font-size: 35px;
 }
 .cate-dropdown{
+    
+}
+.category:hover{
+    position: relative;
+    display: inline-block;
+}
+.cate-dropdown{
+    grid-template-columns: 1fr 1fr;
     width: 500px;
     background-color: white;
     color: #2e2f32;
     position: absolute;
     box-shadow: 0px 2px 8px rgb(0 0 0 / 20%);
     /* margin-top: 3px; */
-    display: none;
     padding: 20px;
     font-size: 14px;
     margin-top: 300px;
-}
-.category:hover{
-    position: relative;
-    display: inline-block;
-}
-.category:hover~.cate-dropdown{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 .cate-dropdown>div>div{
     padding: 10px 0px 10px 10px;
