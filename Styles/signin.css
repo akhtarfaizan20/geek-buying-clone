@@ -35,7 +35,6 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    
     border-radius: 5px;
 }
 
@@ -54,7 +53,7 @@ body{
 }
 input{
     padding: 15px;
-    border: #ccc 1px solid;
+    border: #dcdcdc 1px solid;
     border-radius: 4px;
 }
 .policycheck u,input{
@@ -71,4 +70,15 @@ input[type="submit"]{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+.button{
+    padding: 15px;
+    border: #dcdcdc 1px solid;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    text-align: center;
+    color: #746f69;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
 }

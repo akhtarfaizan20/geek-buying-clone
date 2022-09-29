@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign in or register</title>
     <link rel="stylesheet" href="/Styles/signup.css">
 </head>
 <body>
@@ -14,7 +14,22 @@
         </a>
     </div>
     <div class="body">
-        
+        <form action="" id="signup-form">
+            <div>
+                <div class="bold">Create account</div>
+                <div onclick="tosignin()" class="fontbig">Sign In</div>
+            </div>
+            <input type="text" placeholder="Enter Name" id="name" required>
+            <input type="email" placeholder="Enter Email" id="email" required>
+            <input type="password" placeholder="Enter password" id="password" required>
+            <div class="policycheck">
+                <input type="checkbox" name="" id="checkbox" required><span>I agree to Geekbuying's <u>Terms of Use</u> & <u>Privacy Policy</u>.</span>
+            </div>
+            <input type="submit" value="Create account">
+        </form>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2012 - 2022 Geekbuying.com. All rights reserved.</p>
     </div>
 </body>
 </html>

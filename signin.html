@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign in or register</title>
+    <link rel="stylesheet" href="/Styles/signin.css">
 </head>
 <body>
-    
+    <div class="header">
+        <a href="index.html">
+            <img src="/images/logo.jpeg" alt="">
+        </a>
+    </div>
+    <div class="body">
+        <form action="" id="signup-form">
+            <div>
+                <div class="bold">Sign In</div>
+            </div>
+            <input type="email" placeholder="Enter Email" id="email" required>
+            <input type="password" placeholder="Enter password" id="password" required>
+            <div class="policycheck">
+                <input type="checkbox" name="" id="checkbox"><span>Keep me signed in</span>
+            </div>
+            <input type="submit" value="Sign In">
+            <div onclick="tosignup()" class="button">
+                Create a new Account
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2012 - 2022 Geekbuying.com. All rights reserved.</p>
+    </div>
 </body>
 </html>
+
+<script src="/Scripts/signin.js"></script>
