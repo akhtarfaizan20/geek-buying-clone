@@ -26,7 +26,7 @@ body{
     justify-content: center;
 }
 
-#signup-form{
+#signin-form{
     width: 25%;
     /* position: absolute; */
     background-color: white;
@@ -38,7 +38,7 @@ body{
     border-radius: 5px;
 }
 
-#signup-form>div:first-child{
+#signin-form>div:first-child{
     display: flex;
     justify-content: space-between;
 }

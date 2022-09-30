@@ -8,6 +8,10 @@ body{
 .nav{
     background-image: linear-gradient(to bottom, #318ffb, #0066ff);
     font-size: 12px;
+    position: fixed;
+    width: 100%;
+    margin-top: -20px;
+    z-index: 100;
 }
 .nav_top{
     display: flex;
@@ -31,6 +35,7 @@ body{
     align-items: center;
     justify-content: space-between;
     align-items: center;
+    
 }
 .logo>h1>a{
     text-decoration: none;
@@ -151,6 +156,7 @@ body{
     display: none;
     padding: 20px;
     font-size: 14px;
+    z-index: 10;
 }
 .savebig:hover .save-big-dropdown{
     display: block;
@@ -307,6 +313,7 @@ body{
     padding: 20px;
     font-size: 14px;
     margin-top: 300px;
+    z-index: 10;
 }
 .cate-dropdown>div>div{
     padding: 10px 0px 10px 10px;
@@ -326,6 +333,7 @@ body{
     display: none;
     width: 230px;
     margin-top: 12px;
+    z-index: 10;
 }
 .cat:hover{
     position: relative;
