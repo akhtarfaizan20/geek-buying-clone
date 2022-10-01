@@ -5,8 +5,8 @@ function tosignin(event){
 function tosignup(event){
     window.location.href="signup.html";
 }
-
-
+let logginedUser=localStorage.getItem("loggined") || "Sign In";
+document.querySelector(".sign").innerText=logginedUser;
 // adding drop down to the footer top section 
 document.querySelector(".top-foot-ad").addEventListener("click",function(e){
     
@@ -186,6 +186,7 @@ let recommended=[
 ];
 dealsday.forEach(function(el){
     let div=document.createElement("div");
+    
     let img=document.createElement("img");
     img.src=el.img;
     let disc=document.createElement("div");
@@ -195,8 +196,9 @@ dealsday.forEach(function(el){
     let strickedoff=document.createElement("div");
     strickedoff.innerText=el.strickedoff;
     div.append(img,disc,price,strickedoff);
+    
     document.querySelector(".deals-of-the-day").append(div);
-})
+});
 featureproduct.forEach(function(el){
     let div=document.createElement("div");
     let img=document.createElement("img");
@@ -208,8 +210,11 @@ featureproduct.forEach(function(el){
     let strickedoff=document.createElement("div");
     strickedoff.innerText=el.strickedoff;
     div.append(img,name,price,strickedoff);
+    div.addEventListener("click",function(){
+        toproduct(el);
+    })
     document.querySelector(".featured-product").append(div);
-})
+});
 bestseller.forEach(function(el){
     let div=document.createElement("div");
     let img=document.createElement("img");
@@ -223,10 +228,11 @@ bestseller.forEach(function(el){
     let strickedoff=document.createElement("div");
     strickedoff.innerText=el.strickedoff;
     div.append(img,disc,name,price,strickedoff);
+    div.addEventListener("click",function(){
+        toproduct(el);
+    })
     document.querySelector(".bestseller-container").append(div);
-})
-
-
+});
 newforyou.forEach(function(el){
     let div=document.createElement("div");
     let img=document.createElement("img");
@@ -237,9 +243,11 @@ newforyou.forEach(function(el){
     price.innerText=el.price;
     
     div.append(img,name,price);
+    div.addEventListener("click",function(){
+        toproduct(el);
+    })
     document.querySelector(".newforyou-container").append(div);
-})
-
+});
 
 recommended.forEach(function(el){
     let div=document.createElement("div");
@@ -251,9 +259,11 @@ recommended.forEach(function(el){
     price.innerText=el.price;
     
     div.append(img,name,price);
+    div.addEventListener("click",function(){
+        toproduct(el);
+    })
     document.querySelector(".recommended-container").append(div);
-})
-
+});
 
 // swiper script
 const swiper = new Swiper('.swiper', {
@@ -305,3 +315,23 @@ const swiper = new Swiper('.swiper', {
       document.getElementById("demo").innerHTML = "EXPIRED";
     }
   }, 1000);
+
+
+  document.querySelector(".sign").addEventListener("click",function(){
+    if(document.querySelector(".sign").innerText!="Sign In"){
+        alert("Logout successful!");
+        document.querySelector(".sign").innerText="Sign In";
+        localStorage.setItem("loggined","Sign In");
+        window.location.relode();
+    }
+})
+  
+// function to add the project to localstorage
+function toproduct(el){
+    localStorage.setItem("product",JSON.stringify(el));
+    window.location.href="product.html";
+}
+
+function hoverdiv(div){
+    div.style.border="1px solid black";
+}

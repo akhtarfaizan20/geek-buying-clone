@@ -72,3 +72,9 @@ input[type="submit"]{
     justify-content: center;
     align-items: flex-end;
 }
+.errors{
+    font-size: 13px;
+    color: red;
+    margin-left: -20px;
+    margin-top: -15px;
+}

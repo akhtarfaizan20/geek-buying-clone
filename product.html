@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Shopping</title>
-    <link rel="stylesheet" href="Styles/navbar.css">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="/Styles/navbar.css">
     <link rel="stylesheet" href="/Styles/footer.css">
-    <link rel="stylesheet" href="/Styles/index.css">
+    <link rel="stylesheet" href="/Styles/product.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   
 </head>
-
 <body>
     <!-- Navigation -->
     <div class="nav">
@@ -174,181 +172,190 @@
         </div>
 
     </div>
+    <!-- Product Details -->
+    <div class="body"> 
 
-
-    <!-- Main section div -->
-    <div class="main-section">
-        <div class="main-section-left">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="/images/Sliding 1/sliding-1-1.png" alt="" srcset=""></div>
-                    <div class="swiper-slide"><img src="/images/Sliding 1/sliding-1-2.png" alt="" srcset=""></div>
-                    <div class="swiper-slide"><img src="/images/Sliding 1/sliding-1-3.png" alt="" srcset=""></div>
-                    <div class="swiper-slide"><img src="/images/Sliding 1/sliding-1-4.png" alt="" srcset=""></div>
-
-                    ...
+        <div class="product">
+            <div class="product-img">
+                <!-- append img here -->
+            </div>
+            <div class="product-discription">
+                <div class="product-name">
+                    <h3>
+                        <!-- Append name Here -->
+                    </h3>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-            </div>
-        </div>
-        <div class="main-section-right">
-            <div class="main-section-top-right">
-                <div><strong>Deals of the Day</strong> <span class="countdown"></span></div>
-                <div class="deals-of-the-day">
-                    <!-- append deal of the day here -->
+                <div class="product-price">
+                    <h2>
+                        <!-- Append price here -->
+                    </h2>
                 </div>
-            </div>
-            <div class="main-section-top-left">
-                <div><strong>Featured Product</strong></div>
-                <div class="featured-product">
-                    <!-- append featured product here -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Trending Category -->
-    <div class="trending">
-        <div class="trending-header">Trending Categories</div>
-        <div class="trending-container">
-            <div>
-                <img src="/images/Trending Category/trending1.png" alt="">
-                <div><strong>3D Printers & Electronics</strong></div>
-                <div>
-                    F3D printers, laser engravers, video games, speakers, earphones and more electronics, up to 70% off!
-                </div>
-            </div>
-            <div>
-                <img src="/images/Trending Category/trending2.png" alt="">
-                <div><strong>Smart homes & Garden</strong></div>
-                <div>
-                    Smart cleaning robots and vacuums, kitchen supplies, living room furniture, patio & garden supplies,
-                    up to 60% off!
-                </div>
-            </div>
-            <div>
-                <img src="/images/Trending Category/trending3.png" alt="">
-                <div><strong>E-transport & Outdoor</strong></div>
-                <div>
-                    Electric bikes, electric scooters, portable generators, and more outdoor gear, save $50 now!
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-    
-    <!-- New for You -->
-    <div class="newforyou">
-        <div class="newforyou-header">
-            New For You
-        </div>
-        <div class="newforyou-container">
-            <div class="newforyou-img">
-                <img src="/images/New for you/newforyou1.png" alt="">
-            </div>
-            <!-- append new for you here -->
-        </div>
-    </div>
-    <!-- Enjoy Life -->
-    <div class="enjoylife">
-        <div class="enjoylife-header">
-            Enjoy Life
-        </div>
-        <div class="enjoylife-container">
-            <div class="enjoylife-left">
-                <img src="/images/Enjoy life/enjoylife-1.png" alt="">
-            </div>
-            <div class="enjoylife-mid">
-                <div>
-                    <div><strong>Go outside for fun and health</strong></div>
-                    <div>
-                        <div>
-                            <img src="/images/Enjoy life/enjoylife-2.png" alt="">
-                            <div>Premium e-mobility</div>
+                <div class="product-container">
+                    <div class="product-ship-from">
+                        <div class="product-label">
+                            Ship from:
                         </div>
-                        <div>
-                            <img src="/images/Enjoy life/enjoylife-3.png" alt="">
-                            <div>Cost efficient Commuting</div>
+                        <div class="china-buttom">
+                            China
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div><strong>Easy & efficient home solutions</strong></div>
-                    <div>
-                        <div>
-                            <img src="/images/Enjoy life/enjoylife-6.png" alt="">
-                            <div>Smart tech for cleaning</div>
+                    <div class="product-quantity">
+                        <div class="product-label">
+                            QTY:
                         </div>
                         <div>
-                            <img src="/images/Enjoy life/enjoylife-7.png" alt="">
-                            <div>Easy Pet cleanup</div>
+                            <div onclick="qtyminus()">-</div>
+                            <div class="product-qty">1</div>
+                            <div onclick="qtyplus()">+</div>
                         </div>
                     </div>
-                </div>
-            </div>
-        <div class="enjoylife-right">
-            <div>
-                <div><strong>Unleash maximum productivity</strong></div>
-                <div>
-                    <div>
-                        <img src="/images/Enjoy life/enjoylife-4.png" alt="">
-                        <div>Premium e-mobility</div>
+                    <div class="product-shipping">
+                        <div class="product-label">
+                            Shipping:
+                        </div>
+                        <div class="product-label">
+                            Estimated Shipping Time:15-45 business days
+                        </div>
+                    </div>
+                    <div class="product-button">
+                        <div class="add-to-cart">
+                            Add to Cart
+                        </div>
+                        <div class="buy-now">
+                            Buy Now
+                        </div>
+                    </div>
+                    <div class="product-payment">
+                        <div class="product-label">
+                            Payment:
+                        </div>
+                        <div class="product-paypal">
+                            <img src="/images/product page/paypal-seeklogo.com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="product-advantage">
+                        <div><i class="fa-solid fa-comment-dollar"></i> Price match</div>
+                        <div><i class="fa-regular fa-circle-down"></i> Dropshipping download</div>
+                        <div>
+                            <i class="fa-solid fa-comment-dollar"></i></i> Bulk orders Rebate
+                        </div>
                     </div>
                     <div>
-                        <img src="/images/Enjoy life/enjoylife-5.png" alt="">
-                        <div>Gets the laptop you need</div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div><strong>Create your workspace</strong></div>
-                <div>
-                    <div>
-                        <img src="/images/Enjoy life/enjoylife-8.png" alt="">
-                        <div>Smart tech for cleaning</div>
-                    </div>
-                    <div>
-                        <img src="/images/Enjoy life/enjoylife-9.png" alt="">
-                        <div>Cost efficient Commuting</div>
+                        <img src="/images/product page//logos.png" alt="" srcset="">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    
-   
 
-    <!-- best seller -->
-    <div class="bestseller">
-        <div class="bestseller-header">
-            Best Sellers
-        </div>
-        <div class="bestseller-container">
-            <!-- append best seller div here -->
-        </div>
     </div>
-    
 
-    <!-- Recommended for you section -->
+    <!-- You can also buy section  -->
     <div class="recommended">
         <div class="recommended-header">
-            Recommended For You
+            You may also like
         </div>
         <div class="recommended-container">
             <!-- append recommended here -->
         </div>
+    </div>
+
+
+    <!-- Discription -->
+    <div class="discription">
+        <h2>
+            Highlights
+        </h2>
+        <ol>
+            <li>60W effect unique spot compression laser: S6 pro uses the latest 5.5W diode spot compression laser. It has an ultra-fine square laser focus, and has twice cutting penetration and accuracy of ordinary lasers. Even in the field of spot compression lasers, S6 pro has thinner engraving marks and stronger cutting and penetration capabilities. It can cut 10mm thick wooden boards and engrave ceramics and metals, which is almost beyond the effect of a 60W CO2 laser.</li>
+            <li>Fast focusing design: S6 has the fastest focus design on the market. The S6 laser combines a fixed focus lens and a sliding design. You only need to slide the laser and tighten the screws to complete the focusing. This makes it very easy to use the laser .</li>
+            <li> Solid and easy-assembly structure design: The full-metal structure design makes the machine extremely solid, and it improves the accuracy of engraving. The whole structure is designed for easy-assembly, and the assembly can be completed in 10-20 minutes. The structural frame is very durable and remains open to upgrade. During use, you can keep the frame and replace with other new lasers. Or replace longer metal beams to expand the engraving area.</li>
+            <li> New eye protection design: The laser filter cover filters 98% of the ultraviolet light to the eyes. You and the people around you can watch laser engraving without wearing goggles. At the same time it can prevent animals from catching the laser spot.</li>
+            <li> Wide compatibility: The machine is compatible with various mature engraving software, such as LaserGRBL, LightBurn, Benbox, GrblController, LiteFire, supports PWM mode engraving, supports Windows system, MAC system (LightBurn), and engraving file format Support JPG, PNG, DXF, AI, SVG, G-code, NC, BMP, etc.</li>
+            <li>Safe design: The machine is equipped with a very convenient power switch, which is not available in other homes. Fixing holes are reserved on the four feet and the body structure to facilitate fixing the machine and the data cable.</li>
+            <li>A4 steel pad: The free A4 size steel pad can protect the table from laser damage. Isolate fire hazards.</li>
+            <li> Right-angle measuring ruler: X-axis and Y-axis contain precise scale lines, which is convenient for you to measure the size of engraving objects quickly. The 410x420mm large-area engraving interval can meet your various engraving needs.</li>
+        </ol>
+    </div>
+
+    <!-- Specification -->
+    <div class="specification">
+        <h2>
+            Specification
+        </h2>
+        <table>
+            <tr>
+                <td>General</td>
+                <td>
+                    <ul>
+                        <li>Brand: SCULPFUN</li>
+                        <li>Type: Laser Engraver</li>
+                        <li>Model: S6 Pro</li>
+                        <li>Color: Silver</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Specification</td>
+                <td>
+                    <ul>
+                        <li>Engraving size: 410 x 420mm</li>
+                        <li>Engraving/cutting material:</li>
+                        <li>Engraving materials: wood, paper, cardboard, plastic, white, PCB board, aluminum oxide, black-painted metal, dark ceramic</li>
+                        <li>Cutting material: 6mm wood& acrylic, cardboard,  fabric, bamboo, plastic board;</li>
+                        <li>Laser effect power: 60W (cutting effect compared to 60W CO2 laser)</li>
+                        <li>Max Machine Electricity Power: 30W   (It has nothing to do with cutting or engraving performance,just electricity consumes)</li>
+                        <li>Diode laser power: 5.5-6W  (Please note that this is light energy and not electric energy)</li>
+                        <li>Laser wave length 455±5nm</li>
+                        <li>Engraving accuracy: 0.01mm</li>
+                        <li>Focusing method: fixed focus laser + sliding device</li>
+                        <li>Laser protective cover: The light filter cover on the laser protects the user's eyes and prevents animals grabing the laser spot.</li>
+                        <li>Operating software: LaserGRBL, LightBurn, LaserGRBL, LightBurn, Benbox, GrblController, LiteFire, support Windows system, support</li>
+                        <li>MAC system. Supported file formats NC, BMP, JPG, PNG, DXF and other image formats.</li>
+                        <li>Data transmission method: USB connection</li>
+                        <li>Power supply: International universal standard power input: 100-240V AC, 50/60HZ output: 12V 5A</li>
+                        <li>Certification: CE FCC RoHS FDA IEC</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Weight & Size</td>
+                <td>
+                    <ul>
+                        <li>Product Weight: 3.0Kg</li>
+                        <li>Package Weight: 4.4Kg</li>
+                        <li>Package Size(L x W x H): 61.5 x 34.5 x 13cm</li>
+                        
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Package Contents</td>
+                <td>
+                    <ul>
+                        <li>1 × X axis assembly</li>
+                        <li>2 × X shaft</li>
+                        <li>2 × Y shaft</li>
+                        <li>1 × control box module set</li>
+                        <li>3 × support feet</li>
+                        <li>1 × laser module set</li>
+                        <li>1 × 12V 5A power adapter</li>
+                        <li>1 × power adapter</li>
+                        <li>1 ×USB cable</li>
+                        <li>Step 1~5 Screw installation package</li>
+                        <li>2 × belt</li>
+                        <li>1 × T-shaped M5 screwdriver</li>
+                        <li>1 × L-shaped M4 screwdriver</li>
+                        <li>1 × L-shaped M3 screwdriver</li>
+                        <li>10 × Tie</li>
+                        <li>1 × 8-10mm nut wrench</li>
+                        <li>1 × brush</li>
+                        <li>1 × Laser goggles</li>
+                        <li>2 × 10 x 10cm  wood chip 3mm thickness</li>
+                        <li>1 × A4 size steel desktop protection pad</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
     </div>
     <!-- Footer -->
     <div class="footer">
@@ -475,7 +482,7 @@
         <div></div>
     </div>
 </body>
-
 </html>
 
-<script src="/Scripts/index.js"></script>
+
+<script src="/Scripts/product.js"></script>
