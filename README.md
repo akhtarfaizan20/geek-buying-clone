@@ -14,20 +14,19 @@ Project link -> https://geekbuying-clone-faizanakhtar.netlify.app/
 
 # 1. Landing Page
 
-![landing page](https://user-images.githubusercontent.com/112635764/209312316-516487e5-4d80-4987-829b-91f9365c3ce5.png)
+![landing page](https://github.com/akhtarfaizan20/geek-buying-clone/blob/master/images/README/home1.png?raw=true)
+![landing page](https://github.com/akhtarfaizan20/geek-buying-clone/blob/master/images/README/home2.png?raw=true)
 
-# 2. Category Page
 
-![cateogry](https://user-images.githubusercontent.com/112635764/209312388-e30a41b8-c32b-48ef-a206-cbe4ff1f4638.png)
+# 2. Login Page
 
-# 3. Cart Page
+![cateogry](https://github.com/akhtarfaizan20/geek-buying-clone/blob/master/images/README/lagin.png?raw=true)
 
-![cart](https://user-images.githubusercontent.com/112635764/209312528-c3b8ca4c-6758-46b3-83b0-0736f4848a63.png)
+# 3. Signup Page
 
-# 4. My orders
+![cart](https://github.com/akhtarfaizan20/geek-buying-clone/blob/master/images/README/signup.png?raw=true)
 
-![order](https://user-images.githubusercontent.com/112635764/209318093-2bef3a07-aefe-4ff9-b8e6-5a27d437539b.png)
+# 4. Product Details Page
 
-# 5. Admin Pannel
+![order](https://github.com/akhtarfaizan20/geek-buying-clone/blob/master/images/README/productDetails.png?raw=true)
 
-![admin pannel](https://user-images.githubusercontent.com/112635764/209313057-067a6525-da1b-4bcf-b3d4-8cfe84c0d99c.png)
